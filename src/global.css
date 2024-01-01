@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+article {
+	@apply my-8 text-lg;
+}
+
+article > p {
+	@apply my-4;
+}
+
+article > h1 {
+	@apply text-4xl mt-10 mb-2 font-semibold  text-sky-700 dark:text-sky-300;
+}
+
+article > h2 {
+	@apply text-3xl mt-8 mb-2 font-semibold leading-8 text-sky-700 dark:text-sky-300;
+}
+
+article > h3 {
+	@apply text-2xl mt-4 mb-2 font-semibold leading-7 text-gray-600 dark:text-gray-200;
+}
+
+article > h4 {
+	@apply text-xl my-2 font-semibold leading-6 text-gray-600 dark:text-gray-200;
+}
+
+article > h5,
+article > h6 {
+	@apply text-lg my-2 font-bold leading-6  text-gray-600 dark:text-gray-200;
+}
+
+article > a,
+.link {
+	@apply text-blue-600 hover:underline;
+}
+
+article > blockquote {
+	@apply mb-4 border-l-2 border-gray-400 text-gray-600 pl-2 rounded-sm;
+}
+
+article > pre {
+	@apply my-4;
+}
+
+article > pre > code {
+	@apply bg-gray-200 p-1 rounded-sm w-10 whitespace-normal;
+}
+
+article > p > code {
+	@apply bg-gray-100 border p-2 m-1 rounded-sm;
+}
+
+article > ul > li,
+article > ol > li {
+	@apply my-4;
+}
